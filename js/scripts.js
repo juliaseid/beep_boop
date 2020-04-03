@@ -1,13 +1,13 @@
-var numbers = [];
+var tempNum = [];
 var output = [];
 var localNums = [];
 var readOut = "";
 
 var numGen = function (num) {
   for (i=0; i<=num; i+=1) {
-    numbers.push(i);
+    tempNum.push(i);
   }
-  return numbers
+  return tempNum;
 
 };
 
@@ -35,11 +35,10 @@ $(document).ready(function() {
   $("#entry").submit(function(event) {
     event.preventDefault();
     var input = parseInt($("#number").val());
-    numGen(input);
+    var numbers = numGen(input);
     outputGen(numbers);
-    $("#songText").empty().append(readOut);
+    $("#songText").empty().append("<li>" + readOut + "</li>");
     $("#song").show();
-
-    
+    $("#entry").trigger("reset");
   })
 });
