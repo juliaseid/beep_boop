@@ -18,15 +18,21 @@ _Specifications:_
 * The program replaces all elements containing the character "2" with "Boop"
     * Input: 0, ..., 2, ..., 12
     * Output: 0, ..., Boop, ..., Boop
-* The program replaces all elements containing the character "3" with "Won't you be my neighbor?"
+* The program replaces all elements containing the character "3" with "(user name), Won't you be my neighbor?"
     * Input: 0, ..., 3, ..., 13
     * Output: 0, ..., Won't you be my neighbor?, ..., Won't you be my neighbor?
+* The program replaces all elements not containing a 1, 2, or 3 but evenly divisible by 5 with "I will bring you (user favorite) cookies!"
+    * Input: 0, ..., 5, ..., 45
+    * Output: I will bring you () cookies! ... I will bring you () cookies! ... I will bring you () cookies!
+* The program replaces all elements not containing a 1, 2, or 3 and not divisible by 5, but which are divisible by 4 with "We can plant (user favorite color) flowers by the mailbox!"
+    * Input: ..., 4, ..., 8
+    * Output: ..., We can plant () flowers by the mailbox! ... We can plant () flowers by the mailbox!  
 
 
 ## Setup/Installation Requirements
 
 * _Open the page in a web browser._
-* _Input a number._
+* _Enter responses to the questions._
 * _Sing along with the generated response._
 
 ## Known Bugs

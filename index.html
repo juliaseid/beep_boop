@@ -8,23 +8,37 @@
     <title>A Neighborly Song</title>
   </head>
   <body>
-    <h2>
-      Want to be a robot's neighbor?
-    </h2>
-    <form id = "entry">
-      <label for="number">Enter a Number:</label>
-      <input id="number" type="number">
-      <button type = "submit" class = "btn-btnprimary"></button>
-    </form>
+    <div class=container>
+      <h2>
+        Want to be a robot's neighbor?
+      </h2>
+      <form id = "entry" class="well">
+        <label for="name">What is your name?</label>
+        <input id="name" type="text">
+        <div class = "sidebar">
+        <h5>Which is your favorite color?</h5>
+          <select class="form-control" id="color">
+            <option>red</option>
+            <option>orange</option>
+            <option>yellow</option>
+            <option>pink</option>
+            <option>purple</option>
+            <option>cream-colored</option>
+          </select>
+        </div>
+        <label for="cookie">What type of cookies do you prefer?</label>
+        <input id="cookie" type="text">
+        <label for="number">Enter a Number:</label>
+        <input id="number" type="number">
+        <button type = "submit" class = "btn-btnprimary">Consider Yourself Invited!</button>
+      </form>
 
-    <div id="song">
-      <h4>Sing along with this welcoming song!</h4>
-      <div id = "songDisplay">
-      <ul>
-        <span id="songText"></span>
-      </ul>
+      <div id="song" class="well">
+        <h4>Sing along with this welcoming song!</h4>
+        <ul>
+          <span id="songText"></span>
+        </ul>
+      </div>
     </div>
-    </div>
-
   </body>
 </html> 
