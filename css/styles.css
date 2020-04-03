@@ -1,3 +1,12 @@
 #song {
   display: none;
 }
+#row1 {
+  margin: 12px;
+  padding: 12px;
+}
+
+#row2 {
+  margin: 12px;
+  padding: 12px;
+}

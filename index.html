@@ -13,23 +13,33 @@
         Want to be a robot's neighbor?
       </h2>
       <form id = "entry" class="well">
-        <label for="name">What is your name?</label>
-        <input id="name" type="text">
-        <div class = "sidebar">
-        <h5>Which is your favorite color?</h5>
-          <select class="form-control" id="color">
-            <option>red</option>
-            <option>orange</option>
-            <option>yellow</option>
-            <option>pink</option>
-            <option>purple</option>
-            <option>cream-colored</option>
-          </select>
+        <div class = "row" id = "row1">
+          <div class = "col-md-4">
+            <label for="name">What is your name?</label>
+            <input id="name" type="text">
+          </div>
+          <div class="col-md-4">
+            <h5>Which is your favorite color?</h5>
+              <select class="form-control" id="color">
+              <option>red</option>
+              <option>orange</option>
+              <option>yellow</option>
+              <option>pink</option>
+              <option>purple</option>
+              <option>cream-colored</option>
+            </select>
+          </div>
         </div>
-        <label for="cookie">What type of cookies do you prefer?</label>
-        <input id="cookie" type="text">
-        <label for="number">Enter a Number:</label>
-        <input id="number" type="number">
+        <div class="row" id="row2">
+          <div class = "col-md-4">
+            <label for="cookie">What type of cookies do you prefer?</label>
+            <input id="cookie" type="text">
+          </div>
+          <div class="col-md-4">
+            <label for="number">Enter a Number:</label>
+            <input id="number" type="number">
+          </div>
+          </div>
         <button type = "submit" class = "btn-btnprimary">Consider Yourself Invited!</button>
       </form>
 
