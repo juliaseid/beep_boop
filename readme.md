@@ -26,7 +26,8 @@ _Specifications:_
     * Output: I will bring you () cookies! ... I will bring you () cookies! ... I will bring you () cookies!
 * The program replaces all elements not containing a 1, 2, or 3 and not divisible by 5, but which are divisible by 4 with "We can plant (user favorite color) flowers by the mailbox!"
     * Input: ..., 4, ..., 8
-    * Output: ..., We can plant () flowers by the mailbox! ... We can plant () flowers by the mailbox!  
+    * Output: ..., We can plant () flowers by the mailbox! ... We can plant () flowers by the mailbox!
+* The program will display the final output in groups of 5 array elements to approximate the verses of a song.  
 
 
 ## Setup/Installation Requirements
