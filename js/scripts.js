@@ -7,6 +7,7 @@ var color = ""
 var name = ""
 
 var numGen = function (num) {
+  numbers = [];
   for (i=0; i<=num; i+=1) {
     numbers.push(i);
   }

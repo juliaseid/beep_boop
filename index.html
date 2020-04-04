@@ -12,45 +12,48 @@
       <h2>
         Want to be a robot's neighbor?
       </h2>
-      <div class="well">
+
       <form id = "entry">
+
         <div class = "row" id = "row1">
-          <div class = "col-md-4">
-            <label for="name">What is your name?</label>
-            <input id="name" type="text">
+            <div class = "col-md-4">
+              <label for="name">What is your name?</label>
+              <input id="name" type="text">
+            </div>
+            <div class="col-md-4">
+              <label for="number">Enter a Number:</label>
+              <input id="number" type="number">
+            </div>          
           </div>
-          <div class="col-md-4">
-            <label for="number">Enter a Number:</label>
-            <input id="number" type="number">
-          </div>          
-        </div>
-        <div class = "row" id = "row2">
-          <div class="col-md-4">
-            <h5>Which is your favorite color?</h5>
-              <select class="form-control" id="color">
-              <option>red</option>
-              <option>orange</option>
-              <option>yellow</option>
-              <option>pink</option>
-              <option>purple</option>
-              <option>cream-colored</option>
-            </select>
+          <div class = "row" id = "row2">
+            <div class="col-md-4">
+              <h5>Which is your favorite color?</h5>
+                <select class="form-control" id="color">
+                <option>red</option>
+                <option>orange</option>
+                <option>yellow</option>
+                <option>pink</option>
+                <option>purple</option>
+                <option>cream-colored</option>
+              </select>
+            </div>
+            <div class = "col-md-4">
+              <h5>What type of cookies do you prefer?</h5>
+                <select class="form-control" id="cookie">
+                <option>oatmeal raisin</option>
+                <option>chocolate chip</option>
+                <option>peanut butter</option>
+                <option>lemon drop</option>
+                <option>molasses spice</option>
+                </select>
+            </div>
           </div>
-          <div class = "col-md-4">
-            <h5>What type of cookies do you prefer?</h5>
-              <select class="form-control" id="cookie">
-              <option>oatmeal raisin</option>
-              <option>chocolate chip</option>
-              <option>peanut butter</option>
-              <option>lemon drop</option>
-              <option>molasses spice</option>
+          <div id="button"></div>
+            <button type="submit" class="btn-btnprimary">Consider Yourself Invited!</button>
           </div>
-        </div>
+        </form>
 
-      </form>
-
-      <button type = "submit" form="entry" class = "btn-btnprimary">Consider Yourself Invited!</button>
-      </div>
+      
       <div id="song" class="well">
         <h4>Sing along with this welcoming song!</h4>
         <ul>
