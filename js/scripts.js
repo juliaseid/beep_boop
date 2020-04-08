@@ -7,11 +7,8 @@ var numGen = function (num) {
 
 };
 
-var outputGen = function (numbers) {
+var outputGen = function (numbers, cookies, color, name) {
   var localNums = []
-  var cookies = ""
-  var color = ""
-  var name = ""
   output=numbers.slice()
   for (i=0; i<numbers.length; i+=1) {
     var charAt = output[i];
@@ -51,11 +48,11 @@ $(document).ready(function() {
   $("#entry").submit(function(event) {
     event.preventDefault();
     var input = parseInt($("#number").val());
-    name = $("#name").val();
-    color = $("#color").val();
-    cookies = $("#cookie").val();
+    var name = $("#name").val();
+    var color = $("#color").val();
+    var cookies = $("#cookie").val();
     var numbers = numGen(input);
-    var output = outputGen(numbers);
+    var output = outputGen(numbers, name, color, cookies);
     singOut = verseGen(output);
     $("#songText").empty().append(singOut);
     $("#song").show();
