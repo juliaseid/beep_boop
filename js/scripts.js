@@ -1,12 +1,3 @@
-var numbers = [];
-var output = [];
-var localNums = [];
-var readOut = "";
-var singOut = [];
-var cookies = ""
-var color = ""
-var name = ""
-
 var numGen = function (num) {
   numbers = [];
   for (i=0; i<=num; i+=1) {
@@ -17,7 +8,10 @@ var numGen = function (num) {
 };
 
 var outputGen = function (numbers) {
-  var verse;
+  var localNums = []
+  var cookies = ""
+  var color = ""
+  var name = ""
   output=numbers.slice()
   for (i=0; i<numbers.length; i+=1) {
     var charAt = output[i];
@@ -38,11 +32,12 @@ var outputGen = function (numbers) {
       localNums[i] = output.splice(i, 1, ("We can plant " + color + " flowers by the mailbox!"))
     }
   }
-  //readOut = output.join(" ")
+
 return output;
 }
 
 var verseGen = function (output) {
+  var singOut = [];
   var verseOutput = output.slice();
   for (i = 0; i <= (output.length / 5); i++) {
     verse = verseOutput.splice(0, 5);
@@ -59,9 +54,9 @@ $(document).ready(function() {
     name = $("#name").val();
     color = $("#color").val();
     cookies = $("#cookie").val();
-    numGen(input);
-    outputGen(numbers);
-    verseGen(output);
+    var numbers = numGen(input);
+    var output = outputGen(numbers);
+    singOut = verseGen(output);
     $("#songText").empty().append(singOut);
     $("#song").show();
     $("#entry").trigger("reset");
